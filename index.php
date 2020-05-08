@@ -50,12 +50,15 @@
                         <li><a href="index.html"><i class="fa fa-circle-o"></i> Pendaftaran Pasien</a>
                     </ul>
                 </li>
+<<<<<<< HEAD
                  <li>
                     <a href="javaScript:void();" class="waves-effect">
                         <i class="icon-briefcase"></i>
                         <span>Antrian</span>
                     </a>
                 </li>
+=======
+>>>>>>> 23555a0d22dbfb6f23b4b6dea678ab6b8d46b85e
                 <li>
                     <a href="javaScript:void();" class="waves-effect">
                         <i class="icon-briefcase"></i>

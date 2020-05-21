@@ -16,9 +16,9 @@
                     <th>ID</th>
                     <th>Nama Pasien</th>
                     <th>Nama Orang Tua/Wali</th>
-                    <th>Jenis Kel</th>
                     <th>TTL</th>
                     <th>Alamat</th>
+                    <th>Jenis Kel</th>
                     <th>No Telp</th>
                     <th class="serial">Aksi</th>
                 </tr>
@@ -26,14 +26,16 @@
             <tbody>
                 <?php
                 $i=1;
-                foreach($anggota as $row): ?>
+                foreach($pendaftaran as $row): ?>
                 <tr>
                     <td class="serial"><?= $i?></td>
-                    <td><?= $row["nik"];?></td>
-                    <td><?= $row["nama_anggota"];?></td>
-                    <td><?= $row["jk"];?></td>
-                    <td><?= $row["tmp_lahir"];?>,<?= $row["tgl_lahir"];?></td>
-                    <td><?= $row["no_telp"];?></td>
+                    <td><?= $row["id"];?></td>
+                    <td><?= $row["nama_pasien"];?></td>
+                    <td><?= $row["nama_ortu"];?></td>
+                    <td><?= $row["tempat_lahir"];?>,<?= $row["tanggal_lahir"];?></td>
+                    <td><?= $row["alamat"];?></td>
+                    <td><?= $row["jenis_kelamin"];?></td>
+                    <td><?= $row["hp"];?></td>
                     <td>
                         <a href="index.php?page=editAnggota&id_anggota=<?= $row["id_anggota"];?>">
                             <button type="submit" class="btn btn-success btn-sm">edit</button>

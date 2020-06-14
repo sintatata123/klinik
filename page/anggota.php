@@ -1,3 +1,12 @@
+<?php
+$pasien=query("SELECT * FROM pasien");
+//var_dump($pasien);die;
+?>
+
+
+
+
+
 <h4>Daftar Pasien Klinik Diego Cihuni</h4>
 <small>Daftar dari setiap orang yang sudah terverifikasi dan secara resmi masuk keanggotaan Pasien di Klinik.</small><br><br>
 
@@ -26,7 +35,7 @@
             <tbody>
                 <?php
                 $i=1;
-                foreach($pendaftaran as $row): ?>
+                foreach($pasien as $row): ?>
                 <tr>
                     <td class="serial"><?= $i?></td>
                     <td><?= $row["id"];?></td>
